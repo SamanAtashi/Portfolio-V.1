@@ -1,5 +1,5 @@
-import Main from "./Container/Main";
 import './App.css';
+import Main from "./Container/Main";
 
 const App = () => {
 	return <Main />

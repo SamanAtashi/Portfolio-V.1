@@ -1,16 +1,14 @@
 import React from 'react';
+import Navbar from '../Components/Navbar/Navbar';
 
-const Main = (props) => {
+const Main = () => {
 	return (
 		<>
-			<nav>
-				<p>Name/Logo</p>
-				<button>Resume</button>
-				<ul>hamburger/list of items</ul>
-			</nav>
-            <main>contents</main>
-            <footer>all the rights reserved</footer>
+			<Navbar />
+			<main>contents</main>
+			<footer>all the rights reserved</footer>
 		</>
 	);
 };
+
 export default Main;
