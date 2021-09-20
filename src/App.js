@@ -1,11 +1,8 @@
+import Main from "./Container/Main";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      hi
-    </div>
-  );
-}
+const App = () => {
+	return <Main />
+};
 
 export default App;
