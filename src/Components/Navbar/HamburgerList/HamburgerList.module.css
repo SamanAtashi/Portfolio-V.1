@@ -1,0 +1,16 @@
+ul {
+	display: flex;
+	flex-direction: column;
+}
+
+
+@media only screen and (min-width: 768px) {
+	ul {
+        flex-direction: row;
+		align-items: center;
+	}
+
+	li {
+		margin: 0 1rem;
+	}
+}
