@@ -48,7 +48,6 @@ const Hamburger = (props) => {
 			className={classes.body}
 			onClick={props.openHandler}
 		>
-			{/* <input type="checkbox" id="check" /> */}
 			<Span active={props.showList} />
 			<Span active={props.showList} />
 			<Span active={props.showList} />
