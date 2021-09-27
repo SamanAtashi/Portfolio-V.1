@@ -3,6 +3,7 @@ label {
 	flex-direction: column;
 	width: 4.5rem;
 	cursor: pointer;
+    z-index: 20;
 }
 
 label span {
