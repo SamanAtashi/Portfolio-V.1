@@ -24,7 +24,7 @@ class HamburgerList extends React.Component {
 					openHandler={this.hamOpenHandler}
 					showList={this.state.showList}
 				/>
-				<List />
+				<List show={this.state.showList} />
 				<BackDrop show={this.state.showList} />
 			</>
 		);
