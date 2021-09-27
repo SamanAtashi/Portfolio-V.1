@@ -1,13 +1,14 @@
 import React from 'react';
 import LogoName from './LogoName/LogoName';
 import HamburgerList from './HamburgerList/HamburgerList';
+import Resume from "../Content/Resume/Resume";
 import './Navbar.module.css';
 
 const Navbar = () => {
 	return (
 		<nav>
 			<LogoName />
-			<button>Resume</button>
+			<Resume/>
 			<HamburgerList />
 		</nav>
 	);
