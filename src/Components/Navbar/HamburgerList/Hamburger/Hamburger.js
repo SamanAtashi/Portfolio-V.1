@@ -42,6 +42,7 @@ const Span = styled.span`
 `;
 
 const Hamburger = (props) => {
+
 	return (
 		<label
 			htmlFor="check"

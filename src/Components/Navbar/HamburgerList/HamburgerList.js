@@ -1,9 +1,7 @@
 import React from 'react';
 import Hamburger from './Hamburger/Hamburger';
 import List from './List/List';
-
 import './HamburgerList.module.css';
-import BackDrop from './BackDrop/BackDrop';
 
 class HamburgerList extends React.Component {
 	state = {
@@ -25,7 +23,6 @@ class HamburgerList extends React.Component {
 					showList={this.state.showList}
 				/>
 				<List show={this.state.showList} />
-				<BackDrop show={this.state.showList} />
 			</>
 		);
 	}

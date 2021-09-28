@@ -22,7 +22,6 @@ background:yellow;
 `}
 
 	@keyframes zoomIn {
-
 		0% {
 			width: 0;
 			height: 0;
@@ -65,8 +64,12 @@ background:yellow;
 `;
 
 const BackDrop = (props) => {
-	return <Div className={classes.backDrop} active={props.show} />;
-
+	return (
+		<Div
+			className={classes.backDrop}
+			active={props.show}
+		/>
+	);
 };
 
 export default BackDrop;
