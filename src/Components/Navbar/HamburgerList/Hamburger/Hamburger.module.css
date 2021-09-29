@@ -13,22 +13,7 @@ label span {
 	margin: 0.19rem 0;
 	transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
-
-@media only screen and (min-width: 768px) {
-	.body {
-		display: none;
-	}
-} */
-
-.nav ul {
-  display: none;
-}
-
-.temp {
-	width: 100px;
-	height: 100px;
-	background-color: yellowgreen;
-}
+*/
 
 .nav_tgl {
 	display: inline-block;
@@ -118,3 +103,11 @@ label span {
 .menu.active .nav_tgl > span:before {
 	transform: rotate(45deg);
 }
+
+
+
+@media only screen and (min-width: 768px) {
+	.menu {
+		display: none;
+	}
+} 

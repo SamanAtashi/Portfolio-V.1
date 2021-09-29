@@ -52,6 +52,7 @@ const Hamburger = (props) => {
 		// 	<Span active={props.showList} />
 		// 	<Span active={props.showList} />
 		// </label>
+
 		<div
 			onClick={props.openHandler}
 			className={`${
@@ -67,14 +68,7 @@ const Hamburger = (props) => {
 			>
 				<span aria-hidden="true"></span>
 			</button>
-			<nav className={classes.nav}>
-				<ul>
-					<li>element one</li>
-					<li>element two</li>
-					<li>element three</li>
-					<li>element four</li>
-				</ul>
-			</nav>
+			<div className={classes.nav}></div>
 		</div>
 	);
 };
