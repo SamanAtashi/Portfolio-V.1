@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import classes from './List.module.css';
 
 const UL = styled.ul`
 	display: none;
@@ -12,9 +13,10 @@ z-index:30;
 position: fixed;
     left: 50%;
     top: 50%;
+transition: all 500ms ease-in-out;
 transform: translate(-50%, -50%);
 flex-direction:column;
-color:white;
+color:black
 `
 			: `
 display: none;
@@ -28,10 +30,10 @@ display: none;
 const List = (props) => {
 	return (
 		<UL active={props.show}>
-			<li>Home</li>
-			<li>About</li>
-			<li>Projects</li>
-			<li>Contact</li>
+			<li className={classes.list_item}>Home</li>
+			<li className={classes.list_item}>About</li>
+			<li className={classes.list_item}>Projects</li>
+			<li className={classes.list_item}>Contact</li>
 		</UL>
 	);
 };
