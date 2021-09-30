@@ -1,4 +1,5 @@
-button {
+.btn {
+	margin-right: 3rem;
 	color: #b73f25;
 	font-family: 'Tinos', serif;
 	font-size: 1rem;
