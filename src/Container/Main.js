@@ -6,10 +6,17 @@ const Main = () => {
 	return (
 		<>
 			<Navbar />
-			<main>
+			<main style={{height:"100%"}}>
 				<Home />
 			</main>
-			<footer>all the rights reserved</footer>
+			<footer
+				style={{
+					marginTop: '2rem',
+					borderTop: '1px solid red',
+				}}
+			>
+				all the rights reserved
+			</footer>
 		</>
 	);
 };
