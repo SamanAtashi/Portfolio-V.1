@@ -4,8 +4,8 @@ const Home = () => {
 	return (
 		<section className={classes.home}>
 			<article>
-				<header>I'm Saman Atashi</header>
-				<p>
+				<header className={classes.head}>I'm Saman Atashi</header>
+				<p className={classes.content}>
 					Lorem Ipsum is simply dummy text of the printing
 					and typesetting industry. Lorem Ipsum has been the
 					industry's standard dummy text ever since the
