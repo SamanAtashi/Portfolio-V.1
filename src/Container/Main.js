@@ -6,7 +6,7 @@ const Main = () => {
 	return (
 		<>
 			<Navbar />
-			<main style={{height:"100%"}}>
+			<main>
 				<Home />
 			</main>
 			<footer
