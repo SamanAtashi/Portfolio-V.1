@@ -16,7 +16,7 @@ position: fixed;
 transition: all 500ms ease-in-out;
 transform: translate(-50%, -50%);
 flex-direction:column;
-color:black
+color:#1f454e;
 `
 			: `
 display: none;

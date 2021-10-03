@@ -40,7 +40,7 @@ label span {
 	height: 0.2rem;
 	width: 1.5rem;
 	border-radius: 1px;
-	background: #293335;
+	background: #f2eddb;
 	vertical-align: middle;
 }
 .nav_tgl > span:before,
@@ -50,8 +50,9 @@ label span {
 	content: '';
 	height: 0.2rem;
 	border-radius: 1rem;
-	background: #293335;
+	background: #f2eddb;
 	transition: all 200ms;
+	z-index: 20;
 }
 .nav_tgl > span:before {
 	top: -0.7rem;
@@ -80,11 +81,10 @@ label span {
 	content: '';
 	width: 100vw;
 	height: 100vh;
-	background: rgba(92, 155, 50, 0.8);
+	background: #f2eddb;
 	transition: all 500ms ease-in-out;
 	clip-path: circle(1rem at calc(100% - 1.5rem) 2rem);
 	visibility: hidden;
-
 }
 
 .menu.active .nav:before {
@@ -99,6 +99,7 @@ label span {
 	top: 0px;
 	left: 0px;
 	width: 2rem;
+	background: #1f454e;
 }
 .menu.active .nav_tgl > span:after {
 	transform: rotate(-45deg);
