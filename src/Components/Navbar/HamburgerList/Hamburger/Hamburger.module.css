@@ -54,6 +54,13 @@ label span {
 	transition: all 200ms;
 	z-index: 20;
 }
+
+.nav_tgl > span:hover,
+.nav_tgl > span:hover::before,
+.nav_tgl > span:hover::after {
+	background: #e19251;
+}
+
 .nav_tgl > span:before {
 	top: -0.7rem;
 	left: 0.2rem;
@@ -101,6 +108,12 @@ label span {
 	width: 2rem;
 	background: #1f454e;
 }
+
+/* .menu.active .nav_tgl > span:hover::after,
+.menu.active .nav_tgl > span:hover::before {
+	background: #e19251;
+} */
+
 .menu.active .nav_tgl > span:after {
 	transform: rotate(-45deg);
 }
