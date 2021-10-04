@@ -1,0 +1,19 @@
+.icons {
+	width: 100%;
+	height: 100%;
+	padding: 0 25%;
+	padding-bottom: 0.1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.icons > svg:hover {
+    cursor: pointer;
+	color: chocolate;
+}
+
+
+@media only screen and (min-width: 768px) {
+	
+}
