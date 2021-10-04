@@ -5,10 +5,18 @@ import { BsGithub } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { BsTwitter } from 'react-icons/bs';
 import classes from './Links.module.css';
+import { useSelector } from 'react-redux';
 
 const Links = () => {
+	const show = useSelector((state) => state.show);
 	return (
-		<div className={classes.icons}>
+		<div
+			className={
+				show
+					? classes.icons + ' ' + classes.iconsOn
+					: classes.icons
+			}
+		>
 			<FaLinkedin />
 			<BsGithub />
 			{/* <AiOutlineMail /> */}

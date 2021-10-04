@@ -1,26 +1,27 @@
 import React from 'react';
 import classes from './Hamburger.module.css';
 import store from '../../../../Store/store.js';
-import { SHOWLIST } from '../../../../Store/portfolio.js';
+import { SHOW } from '../../../../Store/portfolio.js';
 import { useSelector } from 'react-redux';
 
 const Hamburger = () => {
-	const showList_state = useSelector((state) => state.showList);
+	const show = useSelector((state) => state.show);
 
 	const hamOpenHandler = () => {
 		store.dispatch({
-			type: SHOWLIST,
+			type: SHOW,
 			payload: {
-				showList: store.getState().showList,
+				show: store.getState().show,
 			},
 		});
+		console.log(show);
 	};
 
 	return (
 		<div
 			onClick={hamOpenHandler}
 			className={
-				showList_state
+				show
 					? classes.menu + ' ' + classes.active
 					: classes.menu
 			}

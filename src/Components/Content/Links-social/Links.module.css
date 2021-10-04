@@ -6,17 +6,19 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-z-index: 40;
+	z-index: 40;
+}
+
+.iconsOn {
+	color: #1f454e;
+	transition-delay: 450ms;
 }
 
 .icons > svg:hover {
-
-z-index: 40;
-    cursor: pointer;
+	z-index: 40;
+	cursor: pointer;
 	color: chocolate;
 }
 
-
 @media only screen and (min-width: 768px) {
-	
 }

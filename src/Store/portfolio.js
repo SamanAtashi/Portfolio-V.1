@@ -1,14 +1,14 @@
 // action types
-export const SHOWLIST = 'showList';
+export const SHOW = 'show';
 // reducer
 let initState = {
-	showList: false,
+	show: false,
 };
 
 function reducer(state = initState, action) {
 	switch (action.type) {
-		case SHOWLIST:
-			return { showList: !action.payload.showList };
+		case SHOW:
+			return { show: !action.payload.show };
 		default:
 			return state;
 	}
