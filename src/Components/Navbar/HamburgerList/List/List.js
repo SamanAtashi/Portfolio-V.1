@@ -1,40 +1,45 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import classes from './List.module.css';
+import { useSelector } from 'react-redux';
 
-const UL = styled.ul`
-	display: none;
+// const UL = styled.ul`
+// 	display: none;
 
-	${(props) =>
-		props.active
-			? `
-display: flex;
-z-index:30;
-position: fixed;
-    left: 50%;
-    top: 50%;
-transition: all 500ms ease-in-out;
-transform: translate(-50%, -50%);
-flex-direction:column;
-color:#1f454e;
-`
-			: `
-display: none;
-`}
+// 	${(props) =>
+// 		props.active
+// 			? `
+//     display: flex;
+//     z-index:30;
+//     position: fixed;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+//     flex-direction:column;
 
-	@media only screen and (min-width: 768px) {
-		display: flex;
-	}
-`;
+// `
+// 			: `
+
+// `}
+
+// 	@media only screen and (min-width: 768px) {
+// 		display: flex;
+// 	}
+// `;
 
 const List = (props) => {
+	const show = useSelector((state) => state.show);
 	return (
-		<UL active={props.show}>
+		<ul
+			className={`${classes.list} ${
+				show ? classes.listYes : classes.listNo
+			}`}
+		>
 			<li className={classes.list_item}>Home</li>
 			<li className={classes.list_item}>About</li>
 			<li className={classes.list_item}>Projects</li>
 			<li className={classes.list_item}>Contact</li>
-		</UL>
+		</ul>
 	);
 };
 
