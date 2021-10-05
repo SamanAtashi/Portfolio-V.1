@@ -10,18 +10,18 @@
 }
 
 .iconsOn {
-	color: #1f454e;
+	color: var(--main-1-color);
 	transition-delay: 450ms;
 }
 
 .icons > svg:hover {
 	z-index: 40;
 	cursor: pointer;
-	color: chocolate;
+	color: var(--main-3-color);
 }
 
 @media only screen and (min-width: 768px) {
 	.icons {
-		color: #f2eddb;
+		color: var(--main-2-color);
 	}
 }

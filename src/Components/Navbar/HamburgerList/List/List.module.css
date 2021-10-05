@@ -10,7 +10,7 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 	flex-direction: column;
-	color: #1f454e;
+	color: var(--main-1-color);
 	transition-delay: 450ms;
 }
 
@@ -24,7 +24,7 @@
 
 @media only screen and (min-width: 768px) {
 	.list {
-		color: #f2eddb;
+		color: var(--main-2-color);
 		display: flex;
 		position: unset;
 		z-index: 30;

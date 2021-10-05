@@ -40,7 +40,7 @@ label span {
 	height: 0.2rem;
 	width: 1.5rem;
 	border-radius: 1px;
-	background: #f2eddb;
+	background: var(--main-2-color);
 	vertical-align: middle;
 }
 .nav_tgl > span:before,
@@ -50,7 +50,7 @@ label span {
 	content: '';
 	height: 0.2rem;
 	border-radius: 1rem;
-	background: #f2eddb;
+	background: var(--main-2-color);
 	transition: all 200ms;
 	z-index: 20;
 }
@@ -58,7 +58,7 @@ label span {
 .nav_tgl > span:hover,
 .nav_tgl > span:hover::before,
 .nav_tgl > span:hover::after {
-	background: #e19251;
+	background: var(--main-3-color);
 }
 
 .nav_tgl > span:before {
@@ -88,7 +88,7 @@ label span {
 	content: '';
 	width: 100vw;
 	height: 100vh;
-	background: #f2eddb;
+	background: var(--main-2-color);
 	transition: all 500ms ease-in-out;
 	clip-path: circle(1rem at calc(100% - 1.5rem) 2rem);
 	visibility: hidden;
@@ -106,12 +106,12 @@ label span {
 	top: 0px;
 	left: 0px;
 	width: 2rem;
-	background: #1f454e;
+	background: var(--main-1-color);
 }
 
 /* .menu.active .nav_tgl > span:hover::after,
 .menu.active .nav_tgl > span:hover::before {
-	background: #e19251;
+	background: var(--main-3-color);
 } */
 
 .menu.active .nav_tgl > span:after {
