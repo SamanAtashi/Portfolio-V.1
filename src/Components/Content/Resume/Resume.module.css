@@ -1,4 +1,4 @@
-.btn {
+/* .btn {
 	margin-right: 3rem;
 	color: #b73f25;
 	font-family: 'Tinos', serif;
@@ -45,5 +45,65 @@
 	}
 	100% {
 		background-position: 0% 50%;
+	}
+} */
+
+.horizontal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	width: 7rem;
+	height: 2rem;
+
+	margin: 1rem 0;
+
+	border: 0.2rem solid var(--main-2-color);
+
+	font-size: 1rem;
+	cursor: pointer;
+	background: transparent;
+}
+.horizontal > .text {
+	position: relative;
+	color: transparent;
+	background-image: linear-gradient(
+		90deg,
+		var(--main-1-color) 0%,
+		var(--main-1-color) 50%,
+		var(--main-2-color) 50%,
+		var(--main-2-color) 100%
+	);
+	background-repeat: repeat;
+	background-size: 200%;
+	background-position: 100% 0;
+	-webkit-background-clip: text;
+	background-clip: text;
+	transition: background-position 300ms;
+}
+.horizontal::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--main-2-color);
+	transform-origin: 100% 0;
+	transform: scale3d(0, 1, 1);
+	transition: transform 300ms;
+}
+.horizontal:hover .text {
+	background-position: 0 0;
+}
+.horizontal:hover::before {
+	transform-origin: 0 0;
+	transform: scale3d(1, 1, 1);
+}
+
+@media only screen and (max-width: 768px) {
+	.horizontal {
+		margin: 0 1rem;
 	}
 }
