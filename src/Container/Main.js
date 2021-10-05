@@ -10,7 +10,6 @@ class Main extends React.Component {
 				<Navbar />
 				<main>
 					<Home />
-					<GlassLinks />
 				</main>
 				<footer
 					style={{
@@ -20,6 +19,7 @@ class Main extends React.Component {
 				>
 					all the rights reserved
 				</footer>
+				<GlassLinks />
 			</>
 		);
 	}
