@@ -1,10 +1,27 @@
-import React from 'react';
-import classes from "./Home.module.css";
+import React, { useEffect, useState } from 'react';
+import Resume from '../Content/Resume/Resume';
+import classes from './Home.module.css';
 const Home = () => {
+	const [isMobile, setIsMobile] = useState(window.innerWidth > 768);
+
+	useEffect(() => {
+		window.addEventListener(
+			'resize',
+			() => {
+				const ismobile = window.innerWidth > 768;
+				if (ismobile !== isMobile) setIsMobile(ismobile);
+			},
+			false
+		);
+	}, [isMobile]);
+
+	const right = isMobile ? <Resume /> : null;
 	return (
 		<section className={classes.home}>
 			<article>
-				<header className={classes.head}>I'm Saman Atashi</header>
+				<header className={classes.head}>
+					I'm Saman Atashi
+				</header>
 				<p className={classes.content}>
 					Lorem Ipsum is simply dummy text of the printing
 					and typesetting industry. Lorem Ipsum has been the
@@ -21,6 +38,7 @@ const Home = () => {
 					Ipsum.
 				</p>
 			</article>
+			{right}
 		</section>
 	);
 };
