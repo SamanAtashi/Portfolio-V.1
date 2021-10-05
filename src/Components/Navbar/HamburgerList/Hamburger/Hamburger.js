@@ -1,5 +1,45 @@
 import React from 'react';
 import classes from './Hamburger.module.css';
+import store from '../../../../Store/store.js';
+import { SHOW } from '../../../../Store/portfolio.js';
+import { useSelector } from 'react-redux';
+
+const Hamburger = () => {
+	const show = useSelector((state) => state.show);
+
+	const hamOpenHandler = () => {
+		store.dispatch({
+			type: SHOW,
+			payload: {
+				show: store.getState().show,
+			},
+		});
+		console.log(show);
+	};
+
+	return (
+		<div
+			onClick={hamOpenHandler}
+			className={
+				show
+					? classes.menu + ' ' + classes.active
+					: classes.menu
+			}
+		>
+			<button
+				className={classes.nav_tgl}
+				type="button"
+				aria-label="toggle menu"
+			>
+				<span aria-hidden="true"></span>
+			</button>
+			<div className={classes.nav}></div>
+		</div>
+	);
+};
+
+export default Hamburger;
+
 // import styled from 'styled-components';
 
 // const Span = styled.span`
@@ -40,37 +80,13 @@ import classes from './Hamburger.module.css';
 
 // `}
 // `;
-
-const Hamburger = (props) => {
-	return (
-		// <label
-		// 	htmlFor="check"
-		// 	className={classes.body}
-		// 	onClick={props.openHandler}
-		// >
-		// 	<Span active={props.showList} />
-		// 	<Span active={props.showList} />
-		// 	<Span active={props.showList} />
-		// </label>
-
-		<div
-			onClick={props.openHandler}
-			className={`${
-				props.showList
-					? classes.menu + ' ' + classes.active
-					: classes.menu
-			}`}
-		>
-			<button
-				className={classes.nav_tgl}
-				type="button"
-				aria-label="toggle menu"
-			>
-				<span aria-hidden="true"></span>
-			</button>
-			<div className={classes.nav}></div>
-		</div>
-	);
-};
-
-export default Hamburger;
+// inside component
+// <label
+// 	htmlFor="check"
+// 	className={classes.body}
+// 	onClick={props.openHandler}
+// >
+// 	<Span active={props.showList} />
+// 	<Span active={props.showList} />
+// 	<Span active={props.showList} />
+// </label>

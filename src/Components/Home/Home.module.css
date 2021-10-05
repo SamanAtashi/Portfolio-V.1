@@ -1,0 +1,25 @@
+.home {
+	margin: 0 1rem;
+	height: 50%;
+	border-bottom: 1px solid greenyellow;
+}
+
+.head {
+	font-size: 2rem;
+}
+
+.content {
+	font-size: 1rem;
+	width: 95%;
+}
+
+@media only screen and (min-width: 768px) {
+	.home {
+		margin: 0 5%;
+	}
+
+	.content {
+		font-size: 1rem;
+		width: 85%;
+	}
+}

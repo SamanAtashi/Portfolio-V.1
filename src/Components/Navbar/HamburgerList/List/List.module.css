@@ -1,3 +1,36 @@
+.list {
+	display: none;
+}
+
+.listYes {
+	display: flex;
+	position: fixed;
+	z-index: 30;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	flex-direction: column;
+	color: var(--main-1-color);
+	transition-delay: 450ms;
+}
+
+.listNo {
+	display: none;
+}
+
 .list_item {
 	margin: 0 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+	.list {
+		color: var(--main-2-color);
+		display: flex;
+		position: unset;
+		z-index: 30;
+		left: unset;
+		top: unset;
+		transform: unset;
+		flex-direction: row;
+	}
 }

@@ -1,0 +1,27 @@
+.icons {
+	width: 100%;
+	height: 100%;
+	padding: 0 25%;
+	padding-bottom: 0.1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 40;
+}
+
+.iconsOn {
+	color: var(--main-1-color);
+	transition-delay: 450ms;
+}
+
+.icons > svg:hover {
+	z-index: 40;
+	cursor: pointer;
+	color: var(--main-3-color);
+}
+
+@media only screen and (min-width: 768px) {
+	.icons {
+		color: var(--main-2-color);
+	}
+}

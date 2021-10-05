@@ -6,8 +6,35 @@
 
 a {
 	text-decoration: none;
+	color: #f2eddb;
 }
 
 li {
 	list-style: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+
+	background-image: linear-gradient(
+		to top,
+		#18363d,
+		#1b4149,
+		#1e4c56,
+		#215763,
+		#246371
+	);
+	color: #f2eddb;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+}
+
+:root {
+	--main-1-color: #1f454e;
+	--main-2-color: #f2eddb;
+	--main-3-color: #e19251;;
 }
