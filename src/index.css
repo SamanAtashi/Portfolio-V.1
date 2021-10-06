@@ -15,7 +15,7 @@ li {
 
 body {
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 
 	background-image: linear-gradient(
 		to top,
@@ -26,6 +26,8 @@ body {
 		#246371
 	);
 	color: #f2eddb;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #root {
@@ -36,5 +38,5 @@ body {
 :root {
 	--main-1-color: #1f454e;
 	--main-2-color: #f2eddb;
-	--main-3-color: #e19251;;
+	--main-3-color: #e19251;
 }
