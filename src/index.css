@@ -4,9 +4,15 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--main-1-color: #1f454e;
+	--main-2-color: #f2eddb;
+	--main-3-color: #e19251;
+}
+
 a {
 	text-decoration: none;
-	color: #f2eddb;
+	color: var(--main-2-color);
 }
 
 li {
@@ -25,7 +31,7 @@ body {
 		#215763,
 		#246371
 	);
-	color: #f2eddb;
+	color: var(--main-2-color);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -33,10 +39,4 @@ body {
 #root {
 	width: 100%;
 	height: 100%;
-}
-
-:root {
-	--main-1-color: #1f454e;
-	--main-2-color: #f2eddb;
-	--main-3-color: #e19251;
 }

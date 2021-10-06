@@ -36,7 +36,9 @@ const List = (props) => {
 			}`}
 		>
 			<li className={classes.list_item}>Home</li>
-			<li className={classes.list_item}>About</li>
+			<li className={classes.list_item}>
+				<a href="About">About</a>
+			</li>
 			<li className={classes.list_item}>Projects</li>
 			<li className={classes.list_item}>Contact</li>
 		</ul>
