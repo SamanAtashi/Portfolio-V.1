@@ -1,10 +1,13 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 import '../LogoName/LogoName.module.css';
 
 const LogoName = () => {
 	return (
 		<h1>
-			<a href="#">SAMAN ATASHI</a>
+			<HashLink smooth to="#">
+				SAMAN ATASHI
+			</HashLink>
 		</h1>
 	);
 };

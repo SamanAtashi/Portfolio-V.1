@@ -14,7 +14,6 @@ const Hamburger = () => {
 				show: store.getState().show,
 			},
 		});
-		console.log(show);
 	};
 
 	return (

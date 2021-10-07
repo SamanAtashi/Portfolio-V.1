@@ -1,7 +1,123 @@
-import React from 'react';
-// import styled from 'styled-components';
+import React, { useEffect, useState } from 'react'; // import styled from 'styled-components';
 import classes from './List.module.css';
 import { useSelector } from 'react-redux';
+import store from '../../../../Store/store';
+import { SHOW } from '../../../../Store/portfolio';
+import { HashLink } from 'react-router-hash-link';
+
+const List = () => {
+	const show = useSelector((state) => state.show);
+
+	const clickedHandler = () => {
+		store.dispatch({
+			type: SHOW,
+			payload: {
+				show: store.getState().show,
+			},
+		});
+		console.log(show);
+	};
+
+	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+	useEffect(() => {
+		window.addEventListener(
+			'resize',
+			() => {
+				const ismobile = window.innerWidth < 768;
+				if (ismobile !== isMobile) setIsMobile(ismobile);
+			},
+			false
+		);
+		return () => {
+			setIsMobile(window.innerWidth < 768);
+		};
+	}, [isMobile]);
+
+	const right = isMobile ? (
+		<>
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink smooth to="#" className={classes.link_item}>
+					Home
+				</HashLink>
+			</li>
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink
+					smooth
+					to="#About"
+					className={classes.link_item}
+				>
+					About
+				</HashLink>
+			</li>
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink
+					smooth
+					to="#Projects"
+					className={classes.link_item}
+				>
+					Projects
+				</HashLink>
+			</li>
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink
+					smooth
+					to="#Contact"
+					className={classes.link_item}
+				>
+					Contact
+				</HashLink>
+			</li>
+		</>
+	) : (
+		<>
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink smooth to="/" className={classes.link_item}>
+					Home
+				</HashLink>
+			</li>
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink
+					smooth
+					to="/About"
+					className={classes.link_item}
+				>
+					About
+				</HashLink>
+			</li>
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink
+					smooth
+					to="/Projects"
+					className={classes.link_item}
+				>
+					Projects
+				</HashLink>
+			</li>
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink
+					smooth
+					to="/Contact"
+					className={classes.link_item}
+				>
+					Contact
+				</HashLink>
+			</li>
+		</>
+	);
+
+	return (
+		<ul
+			className={`${classes.list} ${
+				show ? classes.listYes : classes.listNo
+			}`}
+		>
+			{right}
+		</ul>
+	);
+};
+
+export default List;
 
 // const UL = styled.ul`
 // 	display: none;
@@ -26,21 +142,3 @@ import { useSelector } from 'react-redux';
 // 		display: flex;
 // 	}
 // `;
-
-const List = (props) => {
-	const show = useSelector((state) => state.show);
-	return (
-		<ul
-			className={`${classes.list} ${
-				show ? classes.listYes : classes.listNo
-			}`}
-		>
-			<li className={classes.list_item}>Home</li>
-			<li className={classes.list_item}>About</li>
-			<li className={classes.list_item}>Projects</li>
-			<li className={classes.list_item}>Contact</li>
-		</ul>
-	);
-};
-
-export default List;

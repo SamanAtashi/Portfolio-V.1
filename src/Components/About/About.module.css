@@ -1,0 +1,26 @@
+.container {
+	margin: 1rem;
+    border-bottom: 1px solid springgreen;
+}
+
+.about_text {
+	margin-bottom: 1rem;
+}
+
+.skills header {
+	color: var(--main-3-color);
+	font-size: 1.5rem;
+}
+
+.skills ul {
+	margin-left: 1rem;
+}
+
+.exp header {
+	color: var(--main-3-color);
+	font-size: 1.5rem;
+}
+
+.exp ul {
+	margin-left: 1rem;
+}
