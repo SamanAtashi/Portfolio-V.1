@@ -2,7 +2,8 @@ import React from 'react';
 // import styled from 'styled-components';
 import classes from './List.module.css';
 import { useSelector } from 'react-redux';
-
+import store from '../../../../Store/store';
+import { SHOW } from '../../../../Store/portfolio';
 import { HashLink } from 'react-router-hash-link';
 
 // const UL = styled.ul`
@@ -31,29 +32,64 @@ import { HashLink } from 'react-router-hash-link';
 
 const List = (props) => {
 	const show = useSelector((state) => state.show);
+
+	const clickedHandler = () => {
+		store.dispatch({
+			type: SHOW,
+			payload: {
+				show: store.getState().show,
+			},
+		});
+		console.log(show);
+	};
+
 	return (
 		<ul
 			className={`${classes.list} ${
 				show ? classes.listYes : classes.listNo
 			}`}
 		>
-			<li className={classes.list_item}>
-				<HashLink smooth to="/">
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink smooth to="/" className={classes.link_item}>
 					Home
 				</HashLink>
 			</li>
-			<li className={classes.list_item}>
-				<HashLink smooth to="/About">
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink
+					smooth
+					to="/About"
+					className={classes.link_item}
+				>
 					About
 				</HashLink>
 			</li>
-			<li className={classes.list_item}>
-				<HashLink smooth to="/About#middle">
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink
+					smooth
+					to="/About#middle"
+					className={classes.link_item}
+				>
 					middle
 				</HashLink>
 			</li>
-			<li className={classes.list_item}>Projects</li>
-			<li className={classes.list_item}>Contact</li>
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink
+					smooth
+					to="/Projects"
+					className={classes.link_item}
+				>
+					Projects
+				</HashLink>
+			</li>
+			<li className={classes.list_item} onClick={clickedHandler}>
+				<HashLink
+					smooth
+					to="/Projects"
+					className={classes.link_item}
+				>
+					Contact
+				</HashLink>
+			</li>
 		</ul>
 	);
 };

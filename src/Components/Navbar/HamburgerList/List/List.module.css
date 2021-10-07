@@ -21,6 +21,9 @@
 .list_item {
 	margin: 0 0.5rem;
 }
+.link_item {
+	color: var(--main-1-color);
+}
 
 @media only screen and (min-width: 768px) {
 	.list {
@@ -32,5 +35,8 @@
 		top: unset;
 		transform: unset;
 		flex-direction: row;
+	}
+	.link_item {
+		color: var(--main-2-color);
 	}
 }
