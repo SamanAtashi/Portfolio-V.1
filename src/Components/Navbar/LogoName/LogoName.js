@@ -5,7 +5,7 @@ import '../LogoName/LogoName.module.css';
 const LogoName = () => {
 	return (
 		<h1>
-			<HashLink smooth to="/">
+			<HashLink smooth to="#">
 				SAMAN ATASHI
 			</HashLink>
 		</h1>
