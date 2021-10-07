@@ -20,7 +20,7 @@ class Main extends React.Component {
 			<Router>
 				<Navbar />
 				<main>
-					<Switch>
+					{/* <Switch>
 						<Route exact path="/" component={Home} />
 						<Route
 							exact
@@ -28,9 +28,9 @@ class Main extends React.Component {
 							component={About}
 						/>
 						<Route render={() => <Redirect to="/" />} />
-					</Switch>
-					{/* <Home />
-					<About /> */}
+					</Switch> */}
+					<Home />
+					<About />
 				</main>
 				<footer
 					style={{

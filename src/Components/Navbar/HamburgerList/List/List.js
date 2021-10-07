@@ -50,14 +50,14 @@ const List = (props) => {
 			}`}
 		>
 			<li className={classes.list_item} onClick={clickedHandler}>
-				<HashLink smooth to="/" className={classes.link_item}>
+				<HashLink smooth to="#" className={classes.link_item}>
 					Home
 				</HashLink>
 			</li>
 			<li className={classes.list_item} onClick={clickedHandler}>
 				<HashLink
 					smooth
-					to="/About"
+					to="#About"
 					className={classes.link_item}
 				>
 					About
@@ -66,7 +66,7 @@ const List = (props) => {
 			<li className={classes.list_item} onClick={clickedHandler}>
 				<HashLink
 					smooth
-					to="/About#middle"
+					to="#middle"
 					className={classes.link_item}
 				>
 					middle
@@ -75,7 +75,7 @@ const List = (props) => {
 			<li className={classes.list_item} onClick={clickedHandler}>
 				<HashLink
 					smooth
-					to="/Projects"
+					to="#Projects"
 					className={classes.link_item}
 				>
 					Projects
@@ -84,7 +84,7 @@ const List = (props) => {
 			<li className={classes.list_item} onClick={clickedHandler}>
 				<HashLink
 					smooth
-					to="/Projects"
+					to="#Contact"
 					className={classes.link_item}
 				>
 					Contact
