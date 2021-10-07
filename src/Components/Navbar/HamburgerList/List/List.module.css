@@ -7,7 +7,7 @@
 	position: fixed;
 	z-index: 30;
 	left: 50%;
-	top: 50%;
+	top: 240%;
 	transform: translate(-50%, -50%);
 	flex-direction: column;
 	color: var(--main-1-color);
