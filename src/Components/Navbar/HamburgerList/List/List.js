@@ -97,15 +97,6 @@ const List = () => {
 			<li className={classes.list_item} onClick={clickedHandler}>
 				<HashLink
 					smooth
-					to="/About#middle"
-					className={classes.link_item}
-				>
-					middle
-				</HashLink>
-			</li>
-			<li className={classes.list_item} onClick={clickedHandler}>
-				<HashLink
-					smooth
 					to="/Projects"
 					className={classes.link_item}
 				>
