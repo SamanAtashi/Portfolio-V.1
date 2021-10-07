@@ -29,18 +29,21 @@ const About = () => {
 				mi mattis commodo. Vestibulum a eros elementum,
 				elementum orci sit amet, condimentum tortor. Nulla ut
 				metus at libero elementum ultricies. Integer sodales
-				viverra nisi. Praesent vitae commodo diam. Nunc sapien
-				neque, elementum vel sem vel, egestas fringilla massa.
-				Mauris ac sem luctus, viverra risus vitae, iaculis nunc.
-				Cras nec libero malesuada, volutpat nunc id, aliquet
-				sem. Nullam tincidunt velit neque, quis iaculis dui
-				vulputate vel. Mauris ex risus, euismod eget mi eget,
-				malesuada dignissim felis. Nam nec quam mollis, mattis
-				tortor eu, congue lacus. Praesent tincidunt nisi id
-				egestas gravida. Morbi posuere faucibus lacus, sit amet
-				vestibulum lorem egestas id. Praesent quis auctor metus.
-				Nunc sed sapien pretium, bibendum felis ac, pretium
-				purus. Proin ac neque dolor.
+				viverra nisi. Praesent vitae commodo diam.
+			</p>
+			<span id="middle">middle</span>
+			<p>
+				Nunc sapien neque, elementum vel sem vel, egestas
+				fringilla massa. Mauris ac sem luctus, viverra risus
+				vitae, iaculis nunc. Cras nec libero malesuada, volutpat
+				nunc id, aliquet sem. Nullam tincidunt velit neque, quis
+				iaculis dui vulputate vel. Mauris ex risus, euismod eget
+				mi eget, malesuada dignissim felis. Nam nec quam mollis,
+				mattis tortor eu, congue lacus. Praesent tincidunt nisi
+				id egestas gravida. Morbi posuere faucibus lacus, sit
+				amet vestibulum lorem egestas id. Praesent quis auctor
+				metus. Nunc sed sapien pretium, bibendum felis ac,
+				pretium purus. Proin ac neque dolor.
 			</p>
 		</div>
 	);

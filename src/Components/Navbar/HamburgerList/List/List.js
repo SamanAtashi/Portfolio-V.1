@@ -3,7 +3,7 @@ import React from 'react';
 import classes from './List.module.css';
 import { useSelector } from 'react-redux';
 
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 
 // const UL = styled.ul`
 // 	display: none;
@@ -37,11 +37,20 @@ const List = (props) => {
 				show ? classes.listYes : classes.listNo
 			}`}
 		>
-			<li className={classes.list_item}>Home</li>
 			<li className={classes.list_item}>
-				<Link smooth to={'/About'}>
+				<HashLink smooth to="/">
+					Home
+				</HashLink>
+			</li>
+			<li className={classes.list_item}>
+				<HashLink smooth to="/About">
 					About
-				</Link>
+				</HashLink>
+			</li>
+			<li className={classes.list_item}>
+				<HashLink smooth to="/About#middle">
+					middle
+				</HashLink>
 			</li>
 			<li className={classes.list_item}>Projects</li>
 			<li className={classes.list_item}>Contact</li>

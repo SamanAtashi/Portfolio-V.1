@@ -17,7 +17,7 @@ const Home = () => {
 
 	const right = isMobile ? <Resume /> : null;
 	return (
-		<section className={classes.home}>
+		<section className={classes.home} id="#">
 			<article>
 				<header className={classes.head}>
 					I'm Saman Atashi
