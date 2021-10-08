@@ -43,6 +43,7 @@ const Main = () => {
 		<Switch>
 			<Route exact path="/" component={Home} />
 			<Route exact path="/About" component={About} />
+			<Route exact path="/Projects" component={Projects} />
 			<Route render={() => <Redirect to="/" />} />
 		</Switch>
 	);

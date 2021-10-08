@@ -22,6 +22,12 @@ class Projects extends React.Component {
 			img_src: 'asdasfasfdafknasgodsg',
 			description: 'asfngsdignfdin',
 		},
+		project_4: {
+			name: 'pro 4',
+			id: 'num4',
+			img_src: 'asdasfasfdafknasgodsg',
+			description: 'asfngsdignfdin',
+		},
 	};
 
 	render() {
@@ -30,6 +36,7 @@ class Projects extends React.Component {
 				<Project name={this.state.project_1.name} />
 				<Project name={this.state.project_2.name} />
 				<Project name={this.state.project_3.name} />
+				<Project name={this.state.project_4.name} />
 			</section>
 		);
 	}
