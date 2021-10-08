@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from './Project/Project';
-import classes from "./Projects.module.css";
+import classes from './Projects.module.css';
 
 class Projects extends React.Component {
 	state = {
@@ -16,6 +16,12 @@ class Projects extends React.Component {
 			img_src: 'asdasfasfdafknasgodsg',
 			description: 'asfngsdignfdin',
 		},
+		project_3: {
+			name: 'pro 3',
+			id: 'num3',
+			img_src: 'asdasfasfdafknasgodsg',
+			description: 'asfngsdignfdin',
+		},
 	};
 
 	render() {
@@ -23,6 +29,7 @@ class Projects extends React.Component {
 			<section id="Projects" className={classes.container}>
 				<Project name={this.state.project_1.name} />
 				<Project name={this.state.project_2.name} />
+				<Project name={this.state.project_3.name} />
 			</section>
 		);
 	}
