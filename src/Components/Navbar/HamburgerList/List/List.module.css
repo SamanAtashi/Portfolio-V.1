@@ -19,7 +19,7 @@
 }
 
 .list_item {
-	margin: 0 0.5rem;
+	margin-left: 0.8rem;
 }
 
 .link_item {
@@ -39,5 +39,12 @@
 	}
 	.link_item {
 		color: var(--main-2-color);
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.list_item {
+		font-size: 1vw;
+		margin-left: 1rem;
 	}
 }
