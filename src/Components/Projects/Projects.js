@@ -33,10 +33,22 @@ class Projects extends React.Component {
 	render() {
 		return (
 			<section id="Projects" className={classes.container}>
-				<Project name={this.state.project_1.name} />
-				<Project name={this.state.project_2.name} />
-				<Project name={this.state.project_3.name} />
-				<Project name={this.state.project_4.name} />
+				<Project
+					name={this.state.project_1.name}
+					desc={this.state.project_1.description}
+				/>
+				<Project
+					name={this.state.project_2.name}
+					desc={this.state.project_2.description}
+				/>
+				<Project
+					name={this.state.project_3.name}
+					desc={this.state.project_3.description}
+				/>
+				<Project
+					name={this.state.project_4.name}
+					desc={this.state.project_4.description}
+				/>
 			</section>
 		);
 	}
