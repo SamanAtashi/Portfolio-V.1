@@ -1,6 +1,9 @@
 .container {
 	margin: 1rem;
-    border-bottom: 1px solid springgreen;
+	font-family: var(--font-2);
+}
+.space {
+	margin: 1rem 0;
 }
 
 .about_text {

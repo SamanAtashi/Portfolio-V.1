@@ -6,15 +6,12 @@ const About = () => {
 		<section className={classes.container} id="About">
 			<article className={classes.about_text}>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing
-					elit. Mauris a lobortis lorem, eu rhoncus nunc.
-					Morbi nisl mauris, dictum sollicitudin placerat
-					ac, pellentesque ultrices nunc. Donec aliquet
-					sapien velit, a molestie libero vestibulum ac.
-					Vestibulum ante ipsum primis in faucibus orci
-					luctus et ultrices posuere cubilia curae; Mauris
-					sed elit nec nulla mattis eleifend a vel quam.
-					Quisque varius nunc vel aliquet porttitor.
+					Studied medicine for four years, problem-solver,
+					energetic, from Iran, based in Russia.{' '}
+				</p>
+				<p className={classes.space}>
+					On my journey to hone my skills and build a less
+					complex world.
 				</p>
 			</article>
 			<article className={classes.skills}>
