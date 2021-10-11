@@ -20,7 +20,7 @@ const Home = () => {
 		<section className={classes.home} id="#">
 			<article>
 				<header className={classes.head}>
-					Hi there, I'm Saman!
+					Hi there, <span>I'm Saman!</span>
 				</header>
 				<p className={classes.content}>
 					Lorem Ipsum is simply dummy text of the printing

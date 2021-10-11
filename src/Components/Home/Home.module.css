@@ -5,13 +5,27 @@
 }
 
 .head {
-	font-size: 3rem;
-    font-family: font1;
+	font-size: 360%;
+	font-family: font1;
+}
+.head span {
+	display: block;
 }
 
 .content {
 	font-size: 1rem;
 	width: 95%;
+	font-family: var(--font-2);
+}
+
+@media only screen and (min-width: 550px) {
+	.head {
+		font-size: 400%;
+		font-family: font1;
+	}
+	.head span {
+		display: inline;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -19,8 +33,22 @@
 		margin: 0 5%;
 	}
 
+	.head {
+		font-size: 500%;
+	}
+
+	.head span {
+		display: inline;
+	}
+
 	.content {
 		font-size: 1rem;
 		width: 85%;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.head {
+		font-size: 900%;
 	}
 }
