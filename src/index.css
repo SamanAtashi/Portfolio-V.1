@@ -1,7 +1,9 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+:root {
+	--main-1-color: #1f454e;
+	--main-2-color: #f2eddb;
+	--main-3-color: #e19251;
+	--font-2: 'Montserrat', sans-serif;
+	--font-3: 'Tinos', sans-serif;
 }
 
 @font-face {
@@ -23,12 +25,16 @@
 		format('truetype');
 }
 
-:root {
-	--main-1-color: #1f454e;
-	--main-2-color: #f2eddb;
-	--main-3-color: #e19251;
-	--font-2: 'Montserrat', sans-serif;
-	--font-3: 'Tinos', sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: font-1;
+}
+
+*::selection {
+	color: var(--main-1-color);
+	background: var(--main-2-color);
 }
 
 a {
