@@ -43,3 +43,41 @@
 	justify-content: space-between;
 	align-items: flex-start;
 }
+
+@media only screen and (min-width: 500px) {
+	.container {
+		margin: 0 5%;
+	}
+	.screen {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.exp,
+	.skills {
+		width: 50%;
+	}
+
+	.exp header {
+		margin: 0.3rem 0;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.exp header,
+	.skills header {
+		font-size: 3vw;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.exp header,
+	.skills header {
+		font-size: 2.5vw;
+	}
+	.about_text,
+	.exp,
+	.skills {
+		font-size: 1vw;
+	}
+}
