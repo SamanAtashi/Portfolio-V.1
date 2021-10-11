@@ -9,6 +9,7 @@ import {
 import smoothScrollPolyfill from 'smoothscroll-polyfill';
 
 import About from '../Components/About/About';
+import Contact from '../Components/Contact/Contact';
 import Home from '../Components/Home/Home';
 import Navbar from '../Components/Navbar/Navbar';
 import Projects from '../Components/Projects/Projects';
@@ -38,12 +39,14 @@ const Main = () => {
 			<Home />
 			<About />
 			<Projects />
+			<Contact />
 		</>
 	) : (
 		<Switch>
 			<Route exact path="/" component={Home} />
 			<Route exact path="/About" component={About} />
 			<Route exact path="/Projects" component={Projects} />
+			<Route exact path="/Contact" component={Contact} />
 			<Route render={() => <Redirect to="/" />} />
 		</Switch>
 	);
