@@ -4,10 +4,31 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'font-1';
+	src: url('./Assets/Fonts/times\ new\ roman.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'font-1-bold';
+	src: url('./Assets/Fonts/times\ new\ roman\ bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'font-1-bold-i';
+	src: url('./Assets/Fonts/times\ new\ roman\ bold\ italic.ttf')
+		format('truetype');
+}
+@font-face {
+	font-family: 'font-1-italic';
+	src: url('./Assets/Fonts/times\ new\ roman\ italic.ttf')
+		format('truetype');
+}
+
 :root {
 	--main-1-color: #1f454e;
 	--main-2-color: #f2eddb;
 	--main-3-color: #e19251;
+	--font-2: 'Montserrat', sans-serif;
+	--font-3: 'Tinos', sans-serif;
 }
 
 a {
