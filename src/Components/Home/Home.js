@@ -23,8 +23,9 @@ const Home = () => {
 					Hi there, <span>I'm Saman!</span>
 				</header>
 				<p className={classes.content}>
-					I'm a Full-Stack developer who loves solving everyday life's problems with code.
-                    I love things simple and organized.
+					I'm a <span>Full-Stack developer</span> who loves
+					solving everyday life's problems with code. I love
+					things simple and organized.
 				</p>
 			</article>
 			{right}

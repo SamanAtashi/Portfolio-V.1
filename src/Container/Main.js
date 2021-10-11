@@ -58,7 +58,7 @@ const Main = () => {
 			<footer
 				style={{
 					marginTop: '2rem',
-					borderTop: '1px solid red',
+					// borderTop: '1px solid red',
 				}}
 			>
 				all the rights reserved

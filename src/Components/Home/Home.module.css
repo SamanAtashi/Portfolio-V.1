@@ -1,10 +1,10 @@
 .home {
 	margin: 0 1rem;
 	height: 50%;
-	border-bottom: 1px solid greenyellow;
 }
 
 .head {
+	margin: 0.5rem 0;
 	font-size: 360%;
 	font-family: font1;
 }
@@ -16,6 +16,11 @@
 	font-size: 1rem;
 	width: 95%;
 	font-family: var(--font-2);
+}
+
+.content span {
+	color: var(--main-3-color);
+	/* text-decoration: underline; */
 }
 
 @media only screen and (min-width: 550px) {
