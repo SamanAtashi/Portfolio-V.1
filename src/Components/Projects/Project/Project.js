@@ -28,7 +28,13 @@ const Project = (props) => {
 			<Description className={classes.scaleIn}>
 				{props.desc}
 			</Description>
-			<div className={classes.img}></div>
+			<div className={classes.img}>
+				{props.status === 'Coming Soon...' ? (
+					<p>Coming Soon...</p>
+				) : (
+					<img alt={props.name} />
+				)}
+			</div>
 		</Article>
 	);
 };
