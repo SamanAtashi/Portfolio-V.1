@@ -1,20 +1,30 @@
 .container {
-	color: #000;
+	color: var(--main-1-color);
 	background: var(--main-2-color);
 	border-radius: 1.2rem;
 	width: 100%;
 	height: 20rem;
 	margin: 1rem 0;
 	cursor: pointer;
+	font-family: var(--font-2);
+	font-weight: 600;
 }
 
-.container header {
-	padding: 1rem;
+.img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    
 }
 
 .scaleIn {
 	-webkit-animation: scaleIn 0.5s both;
 	animation: scaleIn 0.5s both;
+}
+
+.container header {
+	padding: 1rem;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 1024px) {
