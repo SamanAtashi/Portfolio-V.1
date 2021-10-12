@@ -6,12 +6,27 @@ const Contact = () => {
 		<section className={classes.container} id="Contact">
 			<article>
 				<header>Hello.</header>
-				<h5>I can be found at the following:</h5>
 				<ul>
-					<li>Email: milady00126@gmail.com</li>
-					<li>Twitter: @AtashiSaman</li>
-					<li>GitHub: @SamanAtashi</li>
-					<li>LinkedIn: @saman-atashi</li>
+					<li>
+						<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=milady00126@gmail.com">
+							Email: milady00126@gmail.com
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/AtashiSaman">
+							Twitter: @AtashiSaman
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/SamanAtashi">
+							GitHub: @SamanAtashi
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/saman-atashi-9539911b0">
+							LinkedIn: @saman-atashi
+						</a>
+					</li>
 				</ul>
 			</article>
 		</section>

@@ -2,20 +2,12 @@
 	margin: 1rem;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 768px) {
+@media only screen and (min-width: 500px) {
 	.container {
+		margin: 0 5%;
 		display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	.container {
-		display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
 	}
 }
