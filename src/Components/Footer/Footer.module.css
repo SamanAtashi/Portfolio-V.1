@@ -1,11 +1,8 @@
 .container {
-    padding: 1rem;
+	padding: 1rem;
 	text-align: center;
 	border-top: 1px solid var(--main-2-color);
 	padding-top: 1rem;
 	font-family: font-1-italic;
-	position: fixed;
-	bottom: 0;
-	left: 0;
 	width: 100%;
 }

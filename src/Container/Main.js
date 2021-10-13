@@ -15,6 +15,7 @@ import Home from '../Components/Home/Home';
 import Navbar from '../Components/Navbar/Navbar';
 import Projects from '../Components/Projects/Projects';
 import GlassLinks from './GlassLinks/GlassLinks';
+import classes from './Main.module.css';
 
 smoothScrollPolyfill.polyfill();
 
@@ -55,9 +56,11 @@ const Main = () => {
 	return (
 		<Router>
 			<Navbar />
-			<main>{right}</main>
+			<main className={classes.main}>
+				{right}
+				<GlassLinks />
+			</main>
 			<Footer />
-			<GlassLinks />
 		</Router>
 	);
 };
