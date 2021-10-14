@@ -1,18 +1,19 @@
 import React from 'react';
 import Project from './Project/Project';
 import classes from './Projects.module.css';
-
+import nyct from '../../Assets/images/nyct.png';
 class Projects extends React.Component {
 	state = {
 		project_1: {
-			name: 'Project 1',
-			status: 'Coming Soon...',
+			name: 'NYCT-clone',
+			status: 'Done',
 			id: 'num1',
-			img_src: 'asdasfasfdafknasgodsg',
-			description: 'asfngsdignfdin',
+			img_src: nyct,
+			description:
+				'This project is a clone of the original website "nytimes.com".',
 
 			// ! use "#" to iterate through stack array
-			stack: ['HTML', 'css', 'webpack'],
+			stack: ['HTML', 'CSS'],
 		},
 		project_2: {
 			name: 'Project 2',
@@ -44,6 +45,8 @@ class Projects extends React.Component {
 					name={this.state.project_1.name}
 					desc={this.state.project_1.description}
 					status={this.state.project_1.status}
+					src={this.state.project_1.img_src}
+					stack={this.state.project_1.stack}
 				/>
 				<Project
 					name={this.state.project_2.name}

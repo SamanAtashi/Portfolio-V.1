@@ -27,10 +27,23 @@ const Description = styled.div`
 `;
 
 const Project = (props) => {
+	const stacks = () => {
+		let newArr = [];
+		props.stack.forEach((item) => {
+			newArr.push(<span>#{item}</span>);
+		});
+		return newArr;
+	};
+
 	return (
 		<Article className={classes.container}>
 			<header>{props.name}</header>
-			<Description className={classes.scaleIn}>
+			<Description className={`${classes.scaleIn} ${classes.d_f}`}>
+				<div>
+					{props.status === 'Coming Soon...'
+						? null
+						: stacks()}
+				</div>
 				<p>
 					{props.status === 'Coming Soon...'
 						? 'Coming Soon...'
@@ -41,7 +54,7 @@ const Project = (props) => {
 				{props.status === 'Coming Soon...' ? (
 					<p>Coming Soon...</p>
 				) : (
-					<img alt={props.name} />
+					<img alt={props.name} src={props.src} />
 				)}
 			</div>
 		</Article>

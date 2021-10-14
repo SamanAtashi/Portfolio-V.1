@@ -10,12 +10,39 @@
 	font-weight: 600;
 }
 
+.d_f {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.d_f div {
+	margin-bottom: 0.3rem;
+}
+
+.d_f span {
+	/* display: inline; */
+	margin-right: 1rem;
+	font-style: italic;
+
+}
+
 .img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-    
+	width: 90%;
+	height: 60%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img img {
+	width: 100%;
+	height: 100%;
 }
 
 .scaleIn {
