@@ -17,11 +17,18 @@ const Links = () => {
 					: classes.icons
 			}
 		>
-			<FaLinkedin />
-			<BsGithub />
-			{/* <AiOutlineMail /> */}
-			<MdEmail />
-			<BsTwitter />
+			<a href="https://www.linkedin.com/in/saman-atashi-9539911b0">
+				<FaLinkedin />
+			</a>
+			<a href="https://github.com/SamanAtashi">
+				<BsGithub />
+			</a>
+			<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=milady00126@gmail.com">
+				<MdEmail />
+			</a>
+			<a href="https://twitter.com/AtashiSaman">
+				<BsTwitter />
+			</a>
 		</div>
 	);
 };
