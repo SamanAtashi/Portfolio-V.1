@@ -6,6 +6,7 @@ import newsweek from '../../Assets/images/newsweek.png';
 import TicTacToe from '../../Assets/images/ttt.png';
 import Awesome_Books from '../../Assets/images/ab.png';
 import iCinema from '../../Assets/images/icinema.png';
+import todoR from '../../Assets/images/todo-react.png';
 class Projects extends React.Component {
 	state = {
 		done: [
@@ -68,6 +69,17 @@ class Projects extends React.Component {
 				githubUrl:
 					'https://github.com/SamanAtashi/JS-Capstone-project',
 			},
+			{
+				name: 'ToDo List (React)',
+				status: 'Done',
+				id: 'num6',
+				img_src: todoR,
+				description: 'To Do List Application made with React.',
+				stack: ['React', 'LocalStorage'],
+				url: 'https://samanatashi.github.io/Todo_list_react/',
+				githubUrl:
+					'https://github.com/SamanAtashi/Todo_list_react',
+			},
 		],
 		// !-->coming soon
 		project: {
@@ -76,15 +88,18 @@ class Projects extends React.Component {
 		},
 	};
 
-	projectsList = this.state.done.map((project,idx) => {
-		return <Project
-					name={project.name}
-					desc={project.description}
-					status={project.status}
-					src={project.img_src}
-					stack={project.stack}
-					url={project.url}
-					githubUrl={project.githubUrl}/>
+	projectsList = this.state.done.map((project, idx) => {
+		return (
+			<Project
+				name={project.name}
+				desc={project.description}
+				status={project.status}
+				src={project.img_src}
+				stack={project.stack}
+				url={project.url}
+				githubUrl={project.githubUrl}
+			/>
+		);
 	});
 
 	render() {
