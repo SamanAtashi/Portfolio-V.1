@@ -36,9 +36,22 @@ const Project = (props) => {
 	};
 
 	return (
-		<Article className={classes.container}>
+		<Article
+			className={classes.container}
+			onClick={() => window.open(props.url, '_blank')}
+		>
 			<header>{props.name}</header>
 			<Description className={`${classes.scaleIn} ${classes.d_f}`}>
+				<a
+					href={props.githubUrl}
+					onClick={() =>
+						window.open(props.githubUrl, '_blank')
+					}
+					target="_blank"
+					rel="noreferrer"
+				>
+					Github
+				</a>
 				<div>
 					{props.status === 'Coming Soon...'
 						? null

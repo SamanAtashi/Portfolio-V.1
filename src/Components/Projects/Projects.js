@@ -2,6 +2,7 @@ import React from 'react';
 import Project from './Project/Project';
 import classes from './Projects.module.css';
 import nyct from '../../Assets/images/nyct.png';
+import newsweek from '../../Assets/images/newsweek.png';
 class Projects extends React.Component {
 	state = {
 		project_1: {
@@ -11,16 +12,21 @@ class Projects extends React.Component {
 			img_src: nyct,
 			description:
 				'This project is a clone of the original website "nytimes.com".',
-
-			// ! use "#" to iterate through stack array
 			stack: ['HTML', 'CSS'],
+			url: 'https://nyct.netlify.app/',
+			githubUrl: 'https://github.com/SamanAtashi/NYCT_articles_2.0',
 		},
 		project_2: {
-			name: 'Project 2',
-			status: 'Coming Soon...',
+			name: 'NewsWeek-clone',
+			status: 'Done',
 			id: 'num2',
-			img_src: 'asdasfasfdafknasgodsg',
-			description: 'asfngsdignfdin',
+			img_src: newsweek,
+			description:
+				'A CSS front-end webpage made with Bootstrap framework.',
+			stack: ['HTML', 'CSS', 'BootStrap', 'Dynamic_Design'],
+			url: 'https://mynewsweek.netlify.app/',
+			githubUrl:
+				'https://github.com/SamanAtashi/Newsweek_clone_page',
 		},
 		project_3: {
 			name: 'Project 3',
@@ -29,8 +35,9 @@ class Projects extends React.Component {
 			img_src: 'asdasfasfdafknasgodsg',
 			description: 'asfngsdignfdin',
 		},
-		project_4: {
-			name: 'Project 4',
+		// !-->coming soon
+		project: {
+			name: 'Project',
 			status: 'Coming Soon...',
 			id: 'num4',
 			img_src: 'asdasfasfdafknasgodsg',
@@ -47,13 +54,19 @@ class Projects extends React.Component {
 					status={this.state.project_1.status}
 					src={this.state.project_1.img_src}
 					stack={this.state.project_1.stack}
+					url={this.state.project_1.url}
+					githubUrl={this.state.project_1.githubUrl}
 				/>
 				<Project
 					name={this.state.project_2.name}
 					desc={this.state.project_2.description}
 					status={this.state.project_2.status}
+					src={this.state.project_2.img_src}
+					stack={this.state.project_2.stack}
+					url={this.state.project_2.url}
+					githubUrl={this.state.project_2.githubUrl}
 				/>
-				<Project
+				{/* <Project
 					name={this.state.project_3.name}
 					desc={this.state.project_3.description}
 					status={this.state.project_3.status}
@@ -62,7 +75,7 @@ class Projects extends React.Component {
 					name={this.state.project_4.name}
 					desc={this.state.project_4.description}
 					status={this.state.project_4.status}
-				/>
+				/> */}
 			</section>
 		);
 	}
