@@ -3,6 +3,7 @@ import Project from './Project/Project';
 import classes from './Projects.module.css';
 import nyct from '../../Assets/images/nyct.png';
 import newsweek from '../../Assets/images/newsweek.png';
+import TicTacToe from '../../Assets/images/ttt.png';
 class Projects extends React.Component {
 	state = {
 		project_1: {
@@ -29,19 +30,20 @@ class Projects extends React.Component {
 				'https://github.com/SamanAtashi/Newsweek_clone_page',
 		},
 		project_3: {
-			name: 'Project 3',
-			status: 'Coming Soon...',
+			name: 'Ruby-TicTacToe',
+			status: 'Done',
 			id: 'num3',
-			img_src: 'asdasfasfdafknasgodsg',
-			description: 'asfngsdignfdin',
+			img_src: TicTacToe,
+			description:
+				'Tic-tac-toe is a game for two players, X and O, who take turns marking the spaces in a 3×3 grid.',
+			stack: ['Ruby'],
+			url: 'https://github.com/SamanAtashi/Tic_Tac_Toe',
+			githubUrl: 'https://github.com/SamanAtashi/Tic_Tac_Toe',
 		},
 		// !-->coming soon
 		project: {
 			name: 'Project',
 			status: 'Coming Soon...',
-			id: 'num4',
-			img_src: 'asdasfasfdafknasgodsg',
-			description: 'asfngsdignfdin',
 		},
 	};
 
@@ -66,12 +68,16 @@ class Projects extends React.Component {
 					url={this.state.project_2.url}
 					githubUrl={this.state.project_2.githubUrl}
 				/>
-				{/* <Project
+				<Project
 					name={this.state.project_3.name}
 					desc={this.state.project_3.description}
 					status={this.state.project_3.status}
+					src={this.state.project_3.img_src}
+					stack={this.state.project_3.stack}
+					url={this.state.project_3.url}
+					githubUrl={this.state.project_3.githubUrl}
 				/>
-				<Project
+				{/* <Project
 					name={this.state.project_4.name}
 					desc={this.state.project_4.description}
 					status={this.state.project_4.status}
