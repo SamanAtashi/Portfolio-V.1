@@ -14,3 +14,20 @@
 
 	backdrop-filter: blur(5px);
 }
+
+@media only screen and (min-width: 768px) {
+	.glass {
+		position: absolute;
+		right: 5%;
+		left: unset;
+
+		height: 100px;
+		width: 100px;
+
+		height: 50%;
+		width: 3rem;
+
+        border: 1px solid var(--main-2-color);
+        border-radius: 1.2rem;
+	}
+}
