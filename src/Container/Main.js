@@ -58,6 +58,7 @@ const Main = () => {
 			<Navbar />
 			<main className={classes.main}>
 				{right}
+				
 				<GlassLinks />
 			</main>
 			<Footer />

@@ -23,8 +23,5 @@
 @media only screen and (min-width: 768px) {
 	.icons {
 		color: var(--main-2-color);
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
 	}
 }

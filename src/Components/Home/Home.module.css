@@ -40,6 +40,13 @@
 	}
 }
 @media only screen and (min-width: 768px) {
+	.home {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
 	.head {
 		font-size: 500%;
 	}
@@ -57,5 +64,8 @@
 @media only screen and (min-width: 1440px) {
 	.head {
 		font-size: 900%;
+	}
+	.content {
+		font-size: 1vw;
 	}
 }

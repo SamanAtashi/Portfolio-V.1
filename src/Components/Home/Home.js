@@ -2,16 +2,17 @@ import React, { useEffect, useState } from 'react';
 import Resume from '../Content/Resume/Resume';
 import classes from './Home.module.css';
 const Home = () => {
-	const [isMobile, setIsMobile] = useState(window.innerWidth > 768);
+	const [isMobile, setIsMobile] = useState(window.innerWidth > 767);
 
 	useEffect(() => {
 		window.addEventListener(
 			'resize',
 			() => {
-				const ismobile = window.innerWidth > 768;
+				const ismobile = window.innerWidth > 767;
 				if (ismobile !== isMobile) setIsMobile(ismobile);
 			},
 			false
+
 		);
 	}, [isMobile]);
 
