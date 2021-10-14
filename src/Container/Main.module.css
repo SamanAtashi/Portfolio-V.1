@@ -1,3 +1,12 @@
-.main {
-	/* padding-bottom: 6.5rem; */
+.active {
+	background: red;
+}
+
+@media only screen and (min-width: 768px) {
+	.main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 80%;
+	}
 }
