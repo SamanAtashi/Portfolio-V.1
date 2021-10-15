@@ -1,4 +1,6 @@
 import React from 'react';
+import 'react-multi-carousel/lib/styles.css';
+import Carousel from 'react-multi-carousel';
 import Project from './Project/Project';
 import classes from './Projects.module.css';
 import nyct from '../../Assets/images/nyct.png';
@@ -140,15 +142,43 @@ class Projects extends React.Component {
 		);
 	});
 
+	responsive = {
+		superLargeDesktop: {
+			// the naming can be any, depends on you.
+			breakpoint: { max: 4000, min: 1024 },
+			items: 4,
+		},
+		desktop: {
+			breakpoint: { max: 1024, min: 768 },
+			items: 4,
+		},
+		tablet: {
+			breakpoint: { max: 768, min: 600 },
+			items: 2,
+		},
+		mobile: {
+			breakpoint: { max: 600, min: 0 },
+			items: 1,
+		},
+	};
 	render() {
 		return (
 			<section id="Projects" className={classes.container}>
-				{this.projectsList}
-				{/* <Project
-					name={this.state.project_4.name}
-					desc={this.state.project_4.description}
-					status={this.state.project_4.status}
-				/> */}
+				<Carousel
+					showDots={true}
+					focusOnSelect={true}
+					swipeable={true}
+					draggable={true}
+					itemClass={classes.item}
+					containerClass={classes.carousel}
+					sliderClass={classes.slider}
+					responsive={this.responsive}
+					ssr={true} // means to render carousel on server-side.
+					removeArrowOnDeviceType={['tablet', 'mobile']}
+					deviceType={this.props.deviceType}
+				>
+					{this.projectsList}
+				</Carousel>
 			</section>
 		);
 	}
