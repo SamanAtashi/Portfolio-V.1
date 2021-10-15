@@ -1,4 +1,27 @@
-h1 {
-	font-size: 0.8rem;
-	font-family: 'Montserrat', sans-serif;
+.head {
+	font-size: 80%;
+	letter-spacing: 0.08rem;
+}
+
+.head a:hover {
+	transition: all 500ms ease-in;
+	color: var(--main-3-color);
+}
+
+@media only screen and (min-width: 425px) {
+	.head {
+		letter-spacing: 0.15rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.head {
+		font-size: 100%;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.head {
+		font-size: 1vw;
+	}
 }

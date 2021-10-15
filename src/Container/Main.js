@@ -10,10 +10,12 @@ import smoothScrollPolyfill from 'smoothscroll-polyfill';
 
 import About from '../Components/About/About';
 import Contact from '../Components/Contact/Contact';
+import Footer from '../Components/Footer/Footer';
 import Home from '../Components/Home/Home';
 import Navbar from '../Components/Navbar/Navbar';
 import Projects from '../Components/Projects/Projects';
 import GlassLinks from './GlassLinks/GlassLinks';
+import classes from './Main.module.css';
 
 smoothScrollPolyfill.polyfill();
 
@@ -54,16 +56,12 @@ const Main = () => {
 	return (
 		<Router>
 			<Navbar />
-			<main>{right}</main>
-			<footer
-				style={{
-					marginTop: '2rem',
-					borderTop: '1px solid red',
-				}}
-			>
-				all the rights reserved
-			</footer>
-			<GlassLinks />
+			<main className={classes.main}>
+				{right}
+				
+				<GlassLinks />
+			</main>
+			<Footer />
 		</Router>
 	);
 };

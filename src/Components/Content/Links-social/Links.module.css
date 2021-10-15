@@ -14,9 +14,10 @@
 	transition-delay: 450ms;
 }
 
-.icons > svg:hover {
+.icons > a:hover {
 	z-index: 40;
 	cursor: pointer;
+	transition: all 500ms ease-in-out;
 	color: var(--main-3-color);
 }
 

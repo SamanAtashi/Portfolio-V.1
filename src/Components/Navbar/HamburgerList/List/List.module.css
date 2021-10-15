@@ -19,10 +19,23 @@
 }
 
 .list_item {
-	margin: 0 0.5rem;
+	margin-left: 0.8rem;
 }
 
 .link_item {
+	color: var(--main-1-color);
+}
+
+.list_item a {
+	box-shadow: inset 0 -0.1rem 0 rgba(242, 237, 219, 1),
+		0 0.07rem 0 rgba(242, 237, 219, 1);
+	overflow: hidden;
+}
+
+.list_item a span:hover {
+	transition: all 500ms ease-in-out;
+	box-shadow: inset 0 -2rem 0 rgba(242, 237, 219, 1),
+		0 0.2rem 0 rgba(242, 237, 219, 1);
 	color: var(--main-1-color);
 }
 
@@ -39,5 +52,12 @@
 	}
 	.link_item {
 		color: var(--main-2-color);
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.list_item {
+		font-size: 1vw;
+		margin-left: 1rem;
 	}
 }

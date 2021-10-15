@@ -1,0 +1,14 @@
+.container {
+	padding: 1rem;
+	text-align: center;
+	border-top: 1px solid var(--main-2-color);
+	padding-top: 1rem;
+	font-family: font-1-italic;
+	width: 100%;
+}
+
+/* @media only screen and (min-width: 768px) {
+	.container {
+		height: 10%;
+	}
+} */

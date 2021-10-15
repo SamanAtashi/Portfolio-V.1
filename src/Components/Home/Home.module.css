@@ -1,25 +1,71 @@
 .home {
 	margin: 0 1rem;
 	height: 50%;
-	border-bottom: 1px solid greenyellow;
 }
 
 .head {
-	font-size: 2rem;
+	margin: 0.5rem 0;
+	font-size: 360%;
+	font-family: font1;
+}
+.head span {
+	display: block;
 }
 
 .content {
 	font-size: 1rem;
 	width: 95%;
+	font-family: var(--font-2);
 }
 
-@media only screen and (min-width: 768px) {
+.content span {
+	color: var(--main-3-color);
+	/* text-decoration: underline; */
+}
+
+@media only screen and (min-width: 550px) {
+	.head {
+		font-size: 400%;
+		font-family: font1;
+	}
+	.head span {
+		display: inline;
+	}
+}
+
+@media only screen and (min-width: 500px) {
 	.home {
 		margin: 0 5%;
+		margin-bottom: 1rem;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.home {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.head {
+		font-size: 500%;
+	}
+
+	.head span {
+		display: inline;
 	}
 
 	.content {
 		font-size: 1rem;
 		width: 85%;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.head {
+		font-size: 900%;
+	}
+	.content {
+		font-size: 1vw;
 	}
 }

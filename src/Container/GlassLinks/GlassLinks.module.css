@@ -5,7 +5,7 @@
 	left: 0;
 
 	z-index: 40;
-	width: 100vw;
+	width: 100%;
 	height: 3rem;
 	font-size: 150%;
 
@@ -14,3 +14,31 @@
 
 	backdrop-filter: blur(5px);
 }
+
+/* .vertical {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.vertical {
+        display: block;
+        z-index: 100;
+        width: 100px;
+        height: 100px;
+	}
+
+	.glass {
+		position: absolute;
+		right: 5%;
+		left: unset;
+
+		height: 100px;
+		width: 100px;
+
+		height: 50%;
+		width: 3rem;
+
+		border: 1px solid var(--main-2-color);
+		border-radius: 1.2rem;
+	}
+} */

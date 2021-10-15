@@ -38,7 +38,7 @@ const List = () => {
 		<>
 			<li className={classes.list_item} onClick={clickedHandler}>
 				<HashLink smooth to="#" className={classes.link_item}>
-					Home
+					<span>Home</span>
 				</HashLink>
 			</li>
 			<li className={classes.list_item} onClick={clickedHandler}>
@@ -47,7 +47,7 @@ const List = () => {
 					to="#About"
 					className={classes.link_item}
 				>
-					About
+					<span>About</span>
 				</HashLink>
 			</li>
 			<li className={classes.list_item} onClick={clickedHandler}>
@@ -56,7 +56,7 @@ const List = () => {
 					to="#Projects"
 					className={classes.link_item}
 				>
-					Projects
+					<span>Projects</span>
 				</HashLink>
 			</li>
 			<li className={classes.list_item} onClick={clickedHandler}>
@@ -65,7 +65,7 @@ const List = () => {
 					to="#Contact"
 					className={classes.link_item}
 				>
-					Contact
+					<span>Contact</span>
 				</HashLink>
 			</li>
 		</>
@@ -73,7 +73,7 @@ const List = () => {
 		<>
 			<li className={classes.list_item} onClick={clickedHandler}>
 				<HashLink smooth to="/" className={classes.link_item}>
-					Home
+					<span>Home</span>
 				</HashLink>
 			</li>
 			<li className={classes.list_item} onClick={clickedHandler}>
@@ -82,7 +82,7 @@ const List = () => {
 					to="/About"
 					className={classes.link_item}
 				>
-					About
+					<span>About</span>
 				</HashLink>
 			</li>
 			<li className={classes.list_item} onClick={clickedHandler}>
@@ -91,7 +91,7 @@ const List = () => {
 					to="/Projects"
 					className={classes.link_item}
 				>
-					Projects
+					<span>Projects</span>
 				</HashLink>
 			</li>
 			<li className={classes.list_item} onClick={clickedHandler}>
@@ -100,7 +100,7 @@ const List = () => {
 					to="/Contact"
 					className={classes.link_item}
 				>
-					Contact
+					<span>Contact</span>
 				</HashLink>
 			</li>
 		</>

@@ -1,6 +1,19 @@
+.companies {
+	font-style: italic;
+	margin-left: 1rem;
+}
+
+.date {
+	font-weight: 200;
+}
+
 .container {
-	margin: 1rem;
-    border-bottom: 1px solid springgreen;
+	margin: 1rem 1rem 2rem 1rem;
+	font-family: var(--font-2);
+}
+
+.space {
+	margin: 1rem 0;
 }
 
 .about_text {
@@ -9,18 +22,68 @@
 
 .skills header {
 	color: var(--main-3-color);
+	font-family: font-1-bold;
 	font-size: 1.5rem;
+	margin: 0.3rem 0;
 }
 
-.skills ul {
-	margin-left: 1rem;
+.container li {
+	margin: 0.1rem 0;
 }
 
 .exp header {
 	color: var(--main-3-color);
+	font-family: font-1-bold;
 	font-size: 1.5rem;
+	margin: 1rem 0 0.3rem 0;
 }
 
-.exp ul {
-	margin-left: 1rem;
+.exp ul li {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+@media only screen and (min-width: 500px) {
+	.container {
+		margin: 0 5%;
+	}
+	.screen {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.exp,
+	.skills {
+		width: 50%;
+	}
+
+	.exp header {
+		margin: 0.3rem 0;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.exp header,
+	.skills header {
+		font-size: 3vw;
+	}
+	.container li {
+		margin: 0.5rem 0;
+	}
+    .screen{
+    margin-top: 3rem;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+	.exp header,
+	.skills header {
+		font-size: 2.5vw;
+	}
+	.about_text,
+	.exp,
+	.skills {
+		font-size: 1vw;
+	}
 }

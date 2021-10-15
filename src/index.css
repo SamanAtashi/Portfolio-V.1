@@ -1,13 +1,39 @@
+:root {
+	--main-1-color: #1f454e;
+	--main-2-color: #f2eddb;
+	--main-3-color: #ff7300;
+	--font-2: 'Montserrat', sans-serif;
+	--font-3: 'Tinos', sans-serif;
+}
+
+@font-face {
+	font-family: 'font-1';
+	src: url('./Assets/Fonts/times\ new\ roman.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'font-1-bold';
+	src: url('./Assets/Fonts/times\ new\ roman\ bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'font-1-bold-i';
+	src: url('./Assets/Fonts/times\ new\ roman\ bold\ italic.ttf')
+		format('truetype');
+}
+@font-face {
+	font-family: 'font-1-italic';
+	src: url('./Assets/Fonts/times\ new\ roman\ italic.ttf')
+		format('truetype');
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-:root {
-	--main-1-color: #1f454e;
-	--main-2-color: #f2eddb;
-	--main-3-color: #e19251;
+*::selection {
+	color: var(--main-1-color);
+	background: var(--main-2-color);
 }
 
 a {
@@ -23,14 +49,15 @@ body {
 	width: 100vw;
 	height: 100%;
 
-	background-image: linear-gradient(
+	/* background-image: linear-gradient(
 		to top,
 		#18363d,
 		#1b4149,
 		#1e4c56,
 		#215763,
 		#246371
-	);
+	); */
+	background: var(--main-1-color);
 	color: var(--main-2-color);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -39,4 +66,10 @@ body {
 #root {
 	width: 100%;
 	height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		height: 100vh;
+	}
 }
