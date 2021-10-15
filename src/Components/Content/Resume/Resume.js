@@ -6,7 +6,11 @@ const Resume = () => {
 	return (
 		// <button className={`${classes.gradientBorder} ${classes.btn}`}>
 		<button className={classes.horizontal}>
-			<a href={resume} className={classes.text} download>
+			<a
+				href={resume}
+				className={classes.text}
+				download="SamanAtashi-resume"
+			>
 				Resume
 			</a>
 		</button>
