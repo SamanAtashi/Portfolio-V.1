@@ -9,6 +9,7 @@ import iCinema from '../../Assets/images/icinema.png';
 import todoR from '../../Assets/images/todo-react.png';
 import calculator from '../../Assets/images/calculator.png';
 import todo from '../../Assets/images/todolist.png';
+import leaderboard from '../../Assets/images/leaderboard.png';
 class Projects extends React.Component {
 	state = {
 		done: [
@@ -105,6 +106,17 @@ class Projects extends React.Component {
 				url: 'https://samanatashi.github.io/Best_To-Do-List/dist/',
 				githubUrl:
 					'https://github.com/SamanAtashi/Best_To-Do-List',
+			},
+			{
+				name: 'Leader Board',
+				status: 'Done',
+				id: 'num9',
+				img_src: leaderboard,
+				description:
+					'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.',
+				stack: ['JS', 'API', 'WebPack', 'HTML', 'CSS'],
+				url: 'https://samanatashi.github.io/LeaderBoard/dist/',
+				githubUrl: 'https://github.com/SamanAtashi/LeaderBoard',
 			},
 		],
 		// !-->coming soon
