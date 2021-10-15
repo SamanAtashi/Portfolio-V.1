@@ -8,6 +8,7 @@ import Awesome_Books from '../../Assets/images/ab.png';
 import iCinema from '../../Assets/images/icinema.png';
 import todoR from '../../Assets/images/todo-react.png';
 import calculator from '../../Assets/images/calculator.png';
+import todo from '../../Assets/images/todolist.png';
 class Projects extends React.Component {
 	state = {
 		done: [
@@ -92,6 +93,18 @@ class Projects extends React.Component {
 				url: 'https://mymathmagician.netlify.app/',
 				githubUrl:
 					'https://github.com/SamanAtashi/My-Math-Magicians-app',
+			},
+			{
+				name: 'To Do List',
+				status: 'Done',
+				id: 'num8',
+				img_src: todo,
+				description:
+					'To Do List Application made with Javascript and webpack.',
+				stack: ['JS', 'WebPack', 'HTML', 'CSS'],
+				url: 'https://samanatashi.github.io/Best_To-Do-List/dist/',
+				githubUrl:
+					'https://github.com/SamanAtashi/Best_To-Do-List',
 			},
 		],
 		// !-->coming soon
