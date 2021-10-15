@@ -7,6 +7,7 @@ import TicTacToe from '../../Assets/images/ttt.png';
 import Awesome_Books from '../../Assets/images/ab.png';
 import iCinema from '../../Assets/images/icinema.png';
 import todoR from '../../Assets/images/todo-react.png';
+import calculator from '../../Assets/images/calculator.png';
 class Projects extends React.Component {
 	state = {
 		done: [
@@ -79,6 +80,18 @@ class Projects extends React.Component {
 				url: 'https://samanatashi.github.io/Todo_list_react/',
 				githubUrl:
 					'https://github.com/SamanAtashi/Todo_list_react',
+			},
+			{
+				name: 'My Math Magician',
+				status: 'Done',
+				id: 'num7',
+				img_src: calculator,
+				description:
+					'Simple Calculator built with React. It allows users to make simple calculations and read a random math-releted quote.',
+				stack: ['React'],
+				url: 'https://mymathmagician.netlify.app/',
+				githubUrl:
+					'https://github.com/SamanAtashi/My-Math-Magicians-app',
 			},
 		],
 		// !-->coming soon
