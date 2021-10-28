@@ -2,7 +2,7 @@
 	color: var(--main-1-color);
 	background: var(--main-2-color);
 	border-radius: 1.2rem;
-	width: 100%;
+	/* width: 100%; */
 	height: 20rem;
 	margin: 1rem 0;
 	cursor: pointer;
@@ -70,9 +70,9 @@
 }
 
 @media only screen and (min-width: 500px) and (max-width: 1024px) {
-	.container {
+	/* .container {
 		width: 48%;
-	}
+	} */
 }
 
 /* @media only screen and (min-width: 768px) {
@@ -82,9 +82,9 @@
 } */
 
 @media only screen and (min-width: 1024px) {
-	.container {
+	/* .container {
 		width: 24%;
-	}
+	} */
 }
 @-webkit-keyframes scaleIn {
 	0% {

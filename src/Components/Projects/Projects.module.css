@@ -1,13 +1,25 @@
 .container {
 	margin: 1rem;
 }
+/* 
+.carousel ul {
+	display: flex;
+	flex-wrap: wrap;
+} */
+
+.react-multi-carousel-dot-list{
+    margin: 1rem;
+    padding-top: -1rem;
+}
 
 @media only screen and (min-width: 500px) {
 	.container {
-		margin: 0 5%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
+		margin: 1rem 5%;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.carousel ul li {
+		padding-right: 0.5rem;
 	}
 }

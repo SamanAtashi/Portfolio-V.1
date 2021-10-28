@@ -1,4 +1,6 @@
 import React from 'react';
+import 'react-multi-carousel/lib/styles.css';
+import Carousel from 'react-multi-carousel';
 import Project from './Project/Project';
 import classes from './Projects.module.css';
 import nyct from '../../Assets/images/nyct.png';
@@ -14,16 +16,40 @@ class Projects extends React.Component {
 	state = {
 		done: [
 			{
-				name: 'NYCT-clone',
+				name: 'ToDo List (React)',
 				status: 'Done',
-				id: 'num1',
-				img_src: nyct,
-				description:
-					'This project is a clone of the original website "nytimes.com".',
-				stack: ['HTML', 'CSS'],
-				url: 'https://nyct.netlify.app/',
+				id: 'num6',
+				img_src: todoR,
+				description: 'To Do List Application made with React.',
+				stack: ['React', 'LocalStorage'],
+				url: 'https://samanatashi.github.io/Todo_list_react/',
 				githubUrl:
-					'https://github.com/SamanAtashi/NYCT_articles_2.0',
+					'https://github.com/SamanAtashi/Todo_list_react',
+			},
+			{
+				name: 'iCinema',
+				status: 'Done',
+				id: 'num5',
+				img_src: iCinema,
+				description:
+					'The iCinema is a single web app that is based on the TVmaze API. With the use of the Involvement API to POST and GET the likes and comments, users can comment and like a certain series.',
+				stack: ['JS', 'WebPack', 'TvMaze API', 'HTML', 'CSS'],
+				url: 'https://samanatashi.github.io/JS-Capstone-project/dist/',
+				githubUrl:
+					'https://github.com/SamanAtashi/JS-Capstone-project',
+			},
+
+			{
+				name: 'My Math Magician',
+				status: 'Done',
+				id: 'num7',
+				img_src: calculator,
+				description:
+					'Simple Calculator built with React. It allows users to make simple calculations and read a random math-releted quote.',
+				stack: ['React'],
+				url: 'https://mymathmagician.netlify.app/',
+				githubUrl:
+					'https://github.com/SamanAtashi/My-Math-Magicians-app',
 			},
 			{
 				name: 'NewsWeek-clone',
@@ -60,41 +86,7 @@ class Projects extends React.Component {
 				githubUrl:
 					'https://github.com/SamanAtashi/Awesome_Books',
 			},
-			{
-				name: 'iCinema',
-				status: 'Done',
-				id: 'num5',
-				img_src: iCinema,
-				description:
-					'The iCinema is a single web app that is based on the TVmaze API. With the use of the Involvement API to POST and GET the likes and comments, users can comment and like a certain series.',
-				stack: ['JS', 'WebPack', 'TvMaze API', 'HTML', 'CSS'],
-				url: 'https://samanatashi.github.io/JS-Capstone-project/dist/',
-				githubUrl:
-					'https://github.com/SamanAtashi/JS-Capstone-project',
-			},
-			{
-				name: 'ToDo List (React)',
-				status: 'Done',
-				id: 'num6',
-				img_src: todoR,
-				description: 'To Do List Application made with React.',
-				stack: ['React', 'LocalStorage'],
-				url: 'https://samanatashi.github.io/Todo_list_react/',
-				githubUrl:
-					'https://github.com/SamanAtashi/Todo_list_react',
-			},
-			{
-				name: 'My Math Magician',
-				status: 'Done',
-				id: 'num7',
-				img_src: calculator,
-				description:
-					'Simple Calculator built with React. It allows users to make simple calculations and read a random math-releted quote.',
-				stack: ['React'],
-				url: 'https://mymathmagician.netlify.app/',
-				githubUrl:
-					'https://github.com/SamanAtashi/My-Math-Magicians-app',
-			},
+
 			{
 				name: 'To Do List',
 				status: 'Done',
@@ -107,6 +99,7 @@ class Projects extends React.Component {
 				githubUrl:
 					'https://github.com/SamanAtashi/Best_To-Do-List',
 			},
+
 			{
 				name: 'Leader Board',
 				status: 'Done',
@@ -117,6 +110,18 @@ class Projects extends React.Component {
 				stack: ['JS', 'API', 'WebPack', 'HTML', 'CSS'],
 				url: 'https://samanatashi.github.io/LeaderBoard/dist/',
 				githubUrl: 'https://github.com/SamanAtashi/LeaderBoard',
+			},
+			{
+				name: 'NYCT-clone',
+				status: 'Done',
+				id: 'num1',
+				img_src: nyct,
+				description:
+					'This project is a clone of the original website "nytimes.com".',
+				stack: ['HTML', 'CSS'],
+				url: 'https://nyct.netlify.app/',
+				githubUrl:
+					'https://github.com/SamanAtashi/NYCT_articles_2.0',
 			},
 		],
 		// !-->coming soon
@@ -140,15 +145,43 @@ class Projects extends React.Component {
 		);
 	});
 
+	responsive = {
+		superLargeDesktop: {
+			// the naming can be any, depends on you.
+			breakpoint: { max: 4000, min: 1024 },
+			items: 4,
+		},
+		desktop: {
+			breakpoint: { max: 1024, min: 768 },
+			items: 4,
+		},
+		tablet: {
+			breakpoint: { max: 768, min: 600 },
+			items: 2,
+		},
+		mobile: {
+			breakpoint: { max: 600, min: 0 },
+			items: 1,
+		},
+	};
 	render() {
 		return (
 			<section id="Projects" className={classes.container}>
-				{this.projectsList}
-				{/* <Project
-					name={this.state.project_4.name}
-					desc={this.state.project_4.description}
-					status={this.state.project_4.status}
-				/> */}
+				<Carousel
+					showDots={true}
+					focusOnSelect={true}
+					swipeable={true}
+					draggable={true}
+					itemClass={classes.item}
+					containerClass={classes.carousel}
+					sliderClass={classes.slider}
+					responsive={this.responsive}
+					ssr={true} // means to render carousel on server-side.
+					removeArrowOnDeviceType={['tablet', 'mobile']}
+					deviceType={this.props.deviceType}
+				>
+					{this.projectsList}
+				</Carousel>
 			</section>
 		);
 	}
