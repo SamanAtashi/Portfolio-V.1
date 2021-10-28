@@ -6,7 +6,7 @@
 - Redux
 - Styled-Component
 
-> [img](./src/Assets/images/porfolio.png)
+> ![img](src/Assets/images/portfolio.png)
 
 ## Author
 
