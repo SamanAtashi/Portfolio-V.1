@@ -1,10 +1,12 @@
-# Portfolio
+# Portfolio V.1
 
 ## Built With
 
 - React.js
 - Redux
 - Styled-Component
+
+> [img]("./src/Assets/images/porfolio.png")
 
 ## Author
 
